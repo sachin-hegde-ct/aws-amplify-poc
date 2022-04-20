@@ -1,0 +1,41 @@
+form {
+  width: 100%;
+}
+
+input.form-control {
+  margin-bottom: $medium;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+
+  .visibility-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+input {
+  &:active {
+    border-bottom: 2px solid $ca-burnt-caramel;
+  }
+
+  // TODO: Hard coded active state for demonstration purposes
+  &.is-active {
+    border-bottom: 2px solid $ca-burnt-caramel;
+  }
+}
+
+.not-valid {
+  border-bottom: 2px solid $ca-error-red;
+}
+
+.theme-validation {
+  .invalid-feedback {
+    align-items: center;
+    column-gap: 6px;
+    display: flex;
+  }
+}

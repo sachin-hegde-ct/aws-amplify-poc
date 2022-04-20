@@ -1,0 +1,22 @@
+// TODO: Style navbar
+.theme-navbar-content {
+  // background: $caramel-primary;
+
+  /* TODO: Remove this global navbar font color overwrite */
+  * {
+    color: $black;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      @include media-breakpoint-up(md){
+        display: inline-block;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,10 @@
+assets/
+public/
+.DS_Store
+.eslintignore
+.gitkeep
+.gitignore
+.nvmrc
+.prettierignore
+Dockerfile
+CODEOWNERS

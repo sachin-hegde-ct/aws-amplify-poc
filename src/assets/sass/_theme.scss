@@ -1,0 +1,115 @@
+/*
+1. DESIGN VARIABLES
+These are specific to the design system the project
+utilizes. They are all namespaced/prefixed with "ca" to
+denote they are custom to the Purpose Finance project.
+*/
+
+// Colors
+$black: #000;
+$ca-grey-dark: #5C5C5C;
+$ca-grey-light: #C4C4C4;
+$ca-cloud: #ECF0F3;
+$ca-off-white: #F8F8F8;
+$white: #fff;
+$ca-error-red: #DB0E02;
+$ca-error-red-dark: #A72626;
+$ca-transparent: #0f00;
+$ca-burnt-caramel-light: #FFAC6D;
+$ca-burnt-caramel: #D07C40;
+$ca-burnt-caramel-dark: #9A4F13;
+$ca-caramel-light: #C2F4C8;
+$ca-caramel: #91C197;
+$ca-caramel-dark: #629069;
+$ca-sky-light: #87C7EF;
+$ca-sky: #5496BC;
+$ca-sky-dark: #1A688C;
+$ca-mint-light: #C2F4C8;
+$ca-mint: #91C197;
+$ca-mint-dark: #629069;
+
+// Gradients
+$ca-gradient: radial-gradient(78.93% 36.45% at -6% 112.25%, #E6B665 0%, rgb(230 182 101 / 99.3%) 0.01%, rgb(230 182 101 / 0%) 100%), radial-gradient(85.07% 39.29% at 16.8% 32.51%, #F3F7FA 0%, rgb(243 247 250 / 0%) 100%), radial-gradient(199.73% 92.24% at 125.33% -23.46%, #86BDE9 0%, rgb(134 189 233 / 0%) 85.92%), radial-gradient(129.07% 59.61% at 17.6% -8.93%, #6CBA76 42.34%, rgb(152 191 154 / 0%) 78.75%), radial-gradient(118.67% 54.8% at 115.2% 111.51%, #DD9F73 0%, rgb(221 159 115 / 0%) 96%), #F3F7FA;
+$ca-gradient-light: linear-gradient(0deg, rgb(243 247 250 / 70%), rgb(243 247 250 / 70%)), radial-gradient(78.93% 36.45% at -6% 112.25%, #E6B665 0%, rgb(230 182 101 / 99.3%) 0.01%, rgb(230 182 101 / 0%) 100%), radial-gradient(85.07% 39.29% at 16.8% 32.51%, #F3F7FA 0%, rgb(243 247 250 / 0%) 100%), radial-gradient(199.73% 92.24% at 125.33% -23.46%, #86BDE9 0%, rgb(134 189 233 / 0%) 85.92%), radial-gradient(129.07% 59.61% at 17.6% -8.93%, #6CBA76 42.34%, rgb(152 191 154 / 0%) 78.75%), radial-gradient(118.67% 54.8% at 115.2% 111.51%, #DD9F73 0%, rgb(221 159 115 / 0%) 96%), #F3F7FA;
+$ca-gradient-diagonal: radial-gradient(59.16% 81.63% at 80.45% 95.11%, rgb(213 129 69 / 20%) 0%, rgb(213 129 69 / 0%) 100%), radial-gradient(39.31% 62.81% at 112.12% 50%, rgb(214 175 118 / 40%) 0%, rgb(214 175 118 / 0%) 100%), radial-gradient(42.52% 57.45% at -11.3% 50.06%, rgb(145 193 151 / 30%) 0%, rgb(145 193 151 / 0%) 100%), radial-gradient(85.24% 85.37% at 9.41% 10.13%, rgb(84 150 188 / 30%) 0%, rgb(84 150 188 / 0%) 100%), rgb(236 240 243 / 10%);
+$ca-gradient-grey: radial-gradient(148.27% 68.47% at 49.87% 31.53%, #FFF 0%, rgb(255 255 255 / 0%) 100%);
+$ca-gradient-white: linear-gradient(180deg, #C4C4C4 85.17%, rgb(196 196 196 / 0%) 100%);
+$ca-gradient-radial: radial-gradient(87.5% 87.5% at 50% 50%, #FFF 0%, #C4C4C4 100%);
+
+// Shadows
+$ca-card-box-shadow: 0 4px 8px rgb(0 0 0 / 5%);
+$ca-button-box-shadow: 0 1px 1px rgb(0 0 0 / 45%), 0 3px 5px 2px rgb(0 0 0 / 10%);
+$ca-button-hover-shadow: 0 1px 10px rgb(0 0 0 / 45%), 0 3px 5px 2px rgb(0 0 0 / 10%);
+
+// Spacing - Padding / Margin
+// placeholders based on t-shirt sizes
+$small: 0.5rem; 
+$medium: 1rem; // baseline
+$large: 2rem;
+$x-large: 4rem;
+$xx-large: 6rem;
+$xxx-large: 13.875rem;
+
+// Font sizes
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 4.5rem;
+
+/*
+2. THEME VARIABLES
+These are passed into the Bootstrap _variables.scss file
+to implement changes based on the project DESIGN VARIABLES
+above. This allows all future changes to be controlled from
+this file.
+*/
+// Font weights
+$theme-font-weight-lightest: 300;
+$theme-font-weight-light: 400;
+$theme-font-weight-medium: 500;
+$theme-font-weight-bold: 600;
+$theme-form-label-font-weight: 600;
+
+// Line height
+$theme-line-height: 1.3;
+
+// $theme-line-height-sm: 1.225rem;
+// $theme-line-height-md: 1.5rem;
+
+// Colors
+$theme-primary: $ca-burnt-caramel;
+$theme-secondary: $ca-mint;
+$theme-danger: $ca-error-red;
+$theme-body-color: $black;
+$theme-focus-color: $ca-sky;
+$theme-disabled-background: $ca-grey-light;
+$theme-disabled-color: $ca-grey-dark;
+
+// Fonts
+$theme-font-family-base: "Poppins";
+
+// $theme-font-family-secondary: "TBD";
+$theme-heading-font-family: $theme-font-family-base;
+$theme-font-size-base: 0.875rem;
+$theme-body-font-size: 0.875rem;
+
+// Buttons
+$theme-btn-border-radius: 1.5rem;
+$theme-btn-border-width: 2px;
+$theme-btn-font-size: 0.875rem;
+$theme-btn-font-weight: $theme-font-weight-bold;
+$theme-btn-width-lg: 20rem;
+$theme-btn-width-sm: 16rem;
+
+
+// Misc
+$theme-card-border-radius: 1.25rem;
+$theme-button-border-radius: 6.25rem;
+$theme-input-border-radius: 0.25rem;
+$theme-input-border-width: 2px;
+
+// Icons
+$theme-icon-sm: 1rem;
+$theme-icon-md: 1.5rem;
+$theme-icon-lg: 2rem;

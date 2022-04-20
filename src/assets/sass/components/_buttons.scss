@@ -1,0 +1,46 @@
+// TODO: Add button styles
+.btn {
+  margin-bottom: $large;
+}
+
+.theme-btn:focus {
+  box-shadow: 0 0 5px 5px $theme-focus-color;
+}
+
+.btn-primary, 
+.btn-secondary {
+  &:hover {
+    box-shadow: $ca-button-hover-shadow;
+  }
+
+  &.disabled {
+    background-color: $theme-disabled-background;
+    border-color: $theme-disabled-background;
+    color: $theme-disabled-color;
+  }
+}
+
+.btn-lg {
+  width: $theme-btn-width-lg;
+}
+
+.btn-sm {
+  width: $theme-btn-width-sm;
+}
+
+.btn-outline-primary {
+  border: 1px solid $black;
+  color: $black;
+  padding: $medium $large;
+
+  &:hover {
+    background-color: $black;
+    border: 1px solid $black;
+    color: $white;
+  }
+
+  &.disabled {
+    border: 1px solid $theme-disabled-color;
+    color: $theme-disabled-color;
+  }
+}

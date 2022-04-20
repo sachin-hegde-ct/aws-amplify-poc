@@ -1,0 +1,54 @@
+.theme-auth {
+  background: $ca-gradient-diagonal;
+}
+
+.theme-auth-inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 50px);
+
+  h1 {
+    font-size: $font-size-xs;
+    margin-bottom: $medium;
+  }
+
+  h2 {
+    font-size: $font-size-lg;
+    margin-bottom: $large;
+  }
+
+  .card {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    background-color: $ca-cloud;
+    border: none;
+    box-shadow: $ca-card-box-shadow;
+
+    // TODO: Check on design
+    padding: $medium $large;
+    @include media-breakpoint-up(md){
+      width: 870px;
+      height: fit-content;
+      max-width: 870px;
+      padding: $x-large $xxx-large;
+    }
+  }
+
+  .card-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .input-container:last-of-type {
+    margin-bottom: $large;
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

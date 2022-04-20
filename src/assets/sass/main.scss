@@ -1,0 +1,38 @@
+// NOTE: following import order must be preserved
+// TODO: Reorder imports
+@import '_mixins';
+
+// 1. Fonts - import font family
+@import '_fonts';
+
+// 2. Project theme variables
+@import '_theme';
+
+// 3. Bootstrap variable overrides (use @import of partial later)
+@import '_variables';
+
+// 4. Include base scss
+@import 'bootstrap/scss/bootstrap';
+
+// 5. Custom / additional SCSS / CSS (use @import later)
+@import '_global';
+
+// Special case responsive heading fonts
+
+@import '_responsive-fonts';
+
+// 6. Components - import alphabetically
+@import 'components/_buttons';
+@import 'components/_cards';
+@import 'components/_forms';
+@import 'components/_navbar';
+
+
+// 7. Third party
+// TBD
+
+// 8. Layouts
+@import 'layouts/_auth-flow';
+
+// 9. Pages
+// TBD
